@@ -150,6 +150,7 @@ function Home() {
         <Container>
             <FileUploader
                 handleChange={(file: File) => setImageUpload(file)}
+                types={["PNG", "JPEG", "JPG", "GIF"]}
             />
             <UploadCheckContainer>
                 <UploadCheck><span>업로드 할 이미지 파일</span>{imageUpload == null ? "파일 없음" : imageUpload!.name}</UploadCheck>
