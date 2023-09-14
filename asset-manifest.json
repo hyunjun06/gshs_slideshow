@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/gshs_slideshow/static/js/main.c170f04f.js",
+    "main.js": "/gshs_slideshow/static/js/main.e40b2798.js",
     "index.html": "/gshs_slideshow/index.html",
-    "main.c170f04f.js.map": "/gshs_slideshow/static/js/main.c170f04f.js.map"
+    "main.e40b2798.js.map": "/gshs_slideshow/static/js/main.e40b2798.js.map"
   },
   "entrypoints": [
-    "static/js/main.c170f04f.js"
+    "static/js/main.e40b2798.js"
   ]
 }
