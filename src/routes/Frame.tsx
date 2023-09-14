@@ -67,7 +67,7 @@ function Frame() {
 		<>
 			<TopBar>
 				<Title>
-					GSHS <span>경기과학고등학교</span>
+					<Link to="/">GSHS <span>경기과학고등학교</span></Link>
 				</Title>
 				<div
 					onClick={() => setIsMenuOpen(!isMenuOpen)}
