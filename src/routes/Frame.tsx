@@ -21,6 +21,11 @@ const Title = styled.h1`
     span {
         font-weight: 300;
     }
+    
+    &:hover {
+        cursor: pointer;
+        color: ${(props) => props.theme.textHover};
+    }
 `; 
 
 interface IMenuContainer {
