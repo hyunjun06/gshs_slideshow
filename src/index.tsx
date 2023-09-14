@@ -1,9 +1,9 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import { createGlobalStyle } from "styled-components";
+import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { RouterProvider } from 'react-router-dom';
 import router from './Router';
+import { lightTheme } from './themes';
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -58,6 +58,9 @@ table {
 }
 body {
   font-family: 'Noto Sans KR', sans-serif;
+  background-color: ${(props) => props.theme.background};
+  width: 100vw;
+  height: 100vh;
 }
 a {
   text-decoration: none;
@@ -69,9 +72,11 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <>
-    <GlobalStyle />
-    <App />
-    <RouterProvider router={router} />
-  </>
+	<>
+		<ThemeProvider theme={lightTheme}>
+			<GlobalStyle />
+			<App />
+			<RouterProvider router={router} />
+		</ThemeProvider>
+	</>
 );
