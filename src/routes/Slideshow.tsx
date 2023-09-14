@@ -15,6 +15,7 @@ const Container = styled.div<IContainer>`
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: ${(props) => props.theme.text};
     top: 0;
     position: ${(props) => props.isfullscreen ? "absolute" : "relative"};
     z-index: ${(props) => props.isfullscreen ? "2" : "0"};
